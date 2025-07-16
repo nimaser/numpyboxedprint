@@ -2,16 +2,13 @@
 An APL-inspired boxed prettyprint for numpy arrays
 
 # Installation
-Download numpyboxedprint.py to your project source folder, then import it with either
-```python
-import numpyboxedprint as nbp
-```
-or
+Download numpyboxedprint.py to your project source folder, then import it with
 ```python
 from numpyboxedprint import parr
 ```
 
 # Examples
+Note that the dotted boxes may suffer from alignment issues if you are not using a terminal, in which case you should set output to be solid boxes only.
 ```python
 >>> parr(np.random.permutation(np.arange(-18, 18)).reshape(6, 3, 2))
 ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
